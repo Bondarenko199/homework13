@@ -1,0 +1,28 @@
+.main-footer {
+  padding: 230px 0;
+  background: url("../../images/footer/footer_bg.png") center no-repeat;
+  @include background-size(initial);
+  .container {
+    @include display-flex;
+    @include justify-content(center);
+  }
+}
+
+.main-footer-text {
+  width: 700px;
+  height: 150px;
+  @include display-flex;
+  @include flex-direction(column);
+  @include align-items(center);
+  @include justify-content(center);
+    .main-logo {
+      margin-bottom: 35px;
+    }
+    p {
+      font: 14px "myriadpro-regular",sans-serif;
+      color: #92a1a5;
+      a {
+        color: inherit;
+      }
+    }
+}

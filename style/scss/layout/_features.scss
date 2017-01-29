@@ -1,0 +1,48 @@
+.features {
+  padding: 125px 0;
+  text-align: center;
+  h2 {
+    margin-bottom: 120px;
+    @include montserrat-bold(48px)
+  }
+}
+
+.features-list {
+  @include display-flex();
+  li {
+    width: 25%;
+  }
+  a{
+    display: block;
+    color: #000;
+    @include montserrat-regular(30px);
+    &:before {
+      content: "";
+      width: 90px;
+      height: 90px;
+      margin:0 auto 75px;
+      display: block;
+      @include background-size(contain);
+    }
+    &:hover:before {
+      @include transform(rotate(360deg));
+      @include transition(.5s ease-in-out);
+    }
+  }
+}
+
+.new-technology-button:before {
+  background: url("../../images/background/new_technology_button_bg.png") center no-repeat;
+}
+
+.good-signal-button:before {
+  background: url("../../images/background/good_signal_button_bg.png") center no-repeat;
+}
+
+.easy-to-use-button:before {
+  background: url("../../images/background/easy-to-use_button_bg.png") center no-repeat;
+}
+
+.visibility-button:before {
+  background: url("../../images/background/visibility_button_bg.png") center no-repeat;
+}

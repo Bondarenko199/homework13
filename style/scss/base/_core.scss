@@ -1,0 +1,44 @@
+.container {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-logo {
+  width: 72px;
+  height: 20px;
+  display: block;
+  position: relative;
+}
+
+.main-logo:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  border: #ff343d solid 3px;
+  @include border-radius(50%);
+  top: -18px;
+  right: -15px;
+}
+
+.main-logo:hover:before {
+  @include animation(ripple-out 1s infinite);
+}
+
+.active-text {
+  font-size: 50px !important;
+}
+
+.show-text-button {
+  margin-bottom: 30px;
+}
+
+.hidden-text {
+  @include montserrat-regular(20px);
+  display: none;
+}
+
+.blocked {
+  overflow: hidden;
+}

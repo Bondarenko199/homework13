@@ -1,0 +1,20 @@
+@mixin main-button ($border-color, $button-color, $text-color){
+  width: 180px;
+  height: 60px;
+  border: 1px solid $border-color;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  background: $button-color;
+  font: 18px "montserrat-bold",sans-serif;
+  color: $text-color;
+  text-transform: uppercase;
+}
+
+@mixin montserrat-regular ($font-size) {
+  font: $font-size "montserrat-regular",sans-serif;
+}
+
+@mixin montserrat-bold ($font-size) {
+  font: $font-size "montserrat-bold",sans-serif;
+}

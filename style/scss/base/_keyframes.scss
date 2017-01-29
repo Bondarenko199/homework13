@@ -1,0 +1,26 @@
+@include keyframes(ripple-out) {
+  50% {
+    box-shadow: 0 0 0 6px #eff2f6,
+    0 0 2px 7px rgba(255,52,61,.5);
+  }
+
+  100% {
+    box-shadow:0 0 2px 7px #eff2f6;
+  }
+}
+
+@include keyframes(scroll-down) {
+  0%, 100% {
+    bottom: 0;
+  }
+
+  50% {
+    bottom: 50%;
+  }
+};
+
+//@include keyframes(slide-right) {
+//  100% {
+//    right: 0;
+//  }
+//};

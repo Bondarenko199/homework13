@@ -1,0 +1,41 @@
+.flying-generation {
+  padding: 130px 0;
+  @include display-flex();
+}
+
+.flying-generation-text {
+  width: 50%;
+  padding: 0 120px;
+  text-align: left;
+  @include display-flex();
+  @include flex-direction(column);
+  @include justify-content(center);
+  h2 {
+    margin-bottom: 50px;
+    @include montserrat-regular($big-headers-size);
+    color: #000;
+    @include transition(.3s ease-in-out);
+    span {
+      color: #ff343d;
+    }
+  }
+  p{
+    margin-bottom: 50px;
+  }
+}
+
+.flying-generation-button {
+  @include main-button(#eff2f6, transparent, #000);
+}
+
+.flying-generation-img-container {
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    @include transform(translateX(12%));
+  }
+}

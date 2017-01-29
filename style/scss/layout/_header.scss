@@ -1,0 +1,34 @@
+.main-header {
+  padding-top: 70px;
+  //position: absolute;
+  //top: 0;
+  //left: 0;
+  //right: 0;
+  @include display-flex();
+  @include justify-content(space-between);
+  .main-header-head {
+    @include display-flex();
+    @include justify-content(space-between);
+  }
+}
+
+.phone-number {
+  display: block;
+  margin-left: 85px;
+  @include montserrat-regular(14px);
+  color: #92a1a5;
+  @include transition(.3s ease-in-out);
+  &:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../../images/background/phone.png") center no-repeat;
+    @include background-size(cover);
+  }
+  &:hover {
+    color: #ff343d;
+  }
+}

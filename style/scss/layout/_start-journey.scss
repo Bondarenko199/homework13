@@ -1,0 +1,30 @@
+.start-journey {
+  padding: 775px 0 210px;
+  background: url(../../images/background/journey_bg.jpg) 50% 50% no-repeat;
+  @include background-size(cover);
+    .container {
+      @include display-flex();
+      @include justify-content(center);
+    }
+}
+
+.start-journey-text {
+  max-width: 1000px;
+  width: 100%;
+  text-align: center;
+  h2 {
+    margin-bottom: 55px;
+    font: $big-headers-size "montserrat-bold", sans-serif;
+    color: #fff;
+    @include transition(.3s ease-in-out);
+  }
+  p {
+    color: #fff;
+    margin-bottom: 50px;
+  }
+}
+
+.start-journey-button {
+  @include main-button(transparent, #fff, #318f76);
+}
+

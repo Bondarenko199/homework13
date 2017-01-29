@@ -1,0 +1,98 @@
+.introduction {
+  background: #eff2f6;
+}
+
+.introduction .container {
+  height: 100vh;
+  @include display-flex();
+  @include flex-direction(column);
+  @include justify-content(space-between);
+}
+
+.introduction-red-bg {
+  width: 33.3333%;
+  height: 100vh;
+  @include display-flex();
+  @include align-items(center);
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url("../../images/background/red_bg.jpg") 50% 0% no-repeat;
+  @include background-size(cover);
+}
+
+.introduction-img-container {
+  width: 50vh;
+  height: 50vh;
+  @include display-flex();
+  @include justify-content(center);
+  background: #fff;
+  @include border-radius(50%);
+  @include transform(translateX(-50%));
+  img {
+    width: auto;
+    height: 100%;
+    display: block;
+  }
+}
+
+.slider-container {
+  margin-left: 100px;
+  @include display-flex();
+  @include justify-content(flex-start);
+  @include align-items(center);
+}
+
+.slider-buttons-list {
+  margin-right: 70px;
+  li{
+    width: 10px;
+    height: 10px;
+    margin-bottom: 20px;
+    display: block;
+    background: #e1e1e1;
+    @include border-radius(50%);
+    @include box-shadow(0 0 10px rgba(0,0,0,.5));
+    @include transition(.5s ease-in-out);
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.active-button {
+  background: #ff343d !important;
+}
+
+.slides-list {
+  li {
+    width: 340px;
+    height: 100%;
+    margin-bottom: 50px;
+    h2, h1 {
+      margin-bottom: 50px;
+      @include montserrat-bold(60px);
+    }
+    p {
+      @include montserrat-regular(14px);
+      color: #92a1a5;
+    }
+  }
+}
+
+.slides-list-container {
+  width: 340px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.scroll-down {
+  width: 120px;
+  height: 16px;
+  display: block;
+  position: relative;
+  right: 55px;
+  @include transform(rotate(-90deg) translateX(60%));
+  @include montserrat-bold(18px);
+  @include animation(scroll-down ease-in-out 3s infinite);
+}
